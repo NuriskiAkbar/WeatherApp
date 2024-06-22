@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { View, Button, StyleSheet } from 'react-native'
-import CustomTextInput from './src/components/customTextInput'
+import CustomTextInput from "./customTextInput.js"
 
 const WeatherSearch = ({ searchWeather }) => {
     const [location, setLocation] = useState('')

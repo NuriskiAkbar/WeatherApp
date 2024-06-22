@@ -1,7 +1,7 @@
 import React,{ useState } from 'react'
 import axios from 'axios'
 import { BASE_URL, API_KEY } from './src/constant'
-import { View, StyleSheet, ActivityIndicator } from 'react-native'
+import { AppRegistry, View, StyleSheet, ActivityIndicator } from 'react-native'
 import WeatherSearch from './src/components/weatherSearch'
 import WeatherInfo from './src/components/weatherInfo'
 
@@ -58,5 +58,7 @@ const styles = StyleSheet.create({
     padding: 20,
   },
 })
+
+AppRegistry.registerComponent('main', () => App);
 
 export default App
